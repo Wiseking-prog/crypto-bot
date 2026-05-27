@@ -23,8 +23,6 @@ async def btc_price(update:Update, context:ContextTypes.DEFAULT_TYPE):
     # {'bitcoin': PriceGetResponseItem(last_updated_at=None, usd=76423.0, usd_24h_change=None, usd_24h_vol=None, usd_market_cap=None)}
     await update.message.reply_text(f"Bitcon price is ${price['bitcoin'].usd}")
 
-
-
 async def eth_price(update:Update, context:ContextTypes.DEFAULT_TYPE):
     price = await coin_gecko.simple.price.get(ids='ethereum', vs_currencies='usd')
 
