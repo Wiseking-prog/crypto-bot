@@ -1,3 +1,4 @@
-crypto_bot.code-workspace
+.code-workspace
 .env
 venv/
+
